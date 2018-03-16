@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body align="center">
+<!-- 		<p id= "change_me">To be changed by javascript</p>
+		<button onclick="myFunc('someone')"> Run Function </button> -->
+
+			<form>
+				Use Email: <input type="radio" name="signupstyle" value= "use_email" onclick="showField('email')">
+				<br>
+				Use Phone: <input type="radio" name="signupstyle" value= "use_phone" onclick="showField('phone')">
+				<div id="email-div">
+					Email: 
+					<input type="email" name="my_email" placeholder="example@yahoo.com" id="my_email">
+					<br>
+				</div> 
+
+				<div id="phone-div">
+					Phone: 
+					<input type="tel" name="my_phone" id="my_phone">
+					<br>
+				</div>
+
+				<div id="password-div">
+					Password: <input type="password" name="my_password" id="my_password">
+					<br>
+				</div>
+				
+				
+				<!-- <button onclick="login(document.getElementById('my_email').value, document.getElementById('my_password').value)">Submit</button> -->
+				<button type="button" onclick="signIn()">Submit Here</button>
+			</form>
+
+	<script src="assets/js/signup.js"></script>
+
+</body>
+</html>
